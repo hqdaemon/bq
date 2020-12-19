@@ -1,4 +1,7 @@
 # BQ Analytics
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1be2f5f6c291475f82a8a88a2f138fa1)](https://app.codacy.com/gh/hqdaemon/bq?utm_source=github.com&utm_medium=referral&utm_content=hqdaemon/bq&utm_campaign=Badge_Grade)
+
 User tracking and behavioral analytics based on the Device's Fingerprint.
 
 <br />
