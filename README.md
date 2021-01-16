@@ -7,7 +7,7 @@ User tracking and behavioral analytics based on the Device's Fingerprint.
 <br />
 
 ## Initialization
-Just add the script into your HTML. No API Key Needed.
+Just add the script into your HTML or place bq.min.js into you code. No API Key Needed.
 ```html
 <script async src="/path_to_script/bq.min.js"></script>
 ```
@@ -15,14 +15,14 @@ Just add the script into your HTML. No API Key Needed.
 
 ## bq.getID()
 Returns a unique user ID based on the Device's Fingerprint, regardless of the session and cookies.
-```javascript
+```js
 bq.getID();
 // aac9689d41a34e04b6db362d47b0fdbf
 ```
 
 ## bq.isNew()
 Returns First or No site visit.
-```javascript
+```js
 bq.isNew();
 /*
 (bool) True - First time, False - No
@@ -31,7 +31,7 @@ bq.isNew();
 
 ## bq.getFirstVisit()
 Returns information about the first visit to the site.
-```javascript
+```js
 bq.getFirstVisit();
 /*
 JSON {
@@ -45,7 +45,7 @@ JSON {
 
 ## bq.getIP()
 Returns User's IP.
-```javascript
+```js
 bq.getIP();
 /*
 (string) 192.0.0.1
@@ -54,7 +54,7 @@ bq.getIP();
 
 ## bq.getDevice()
 Returns User's Device Information.
-```javascript
+```js
 bq.getDevice();
 /*
 JSON {
@@ -84,7 +84,7 @@ JSON {
 
 ## bq.getCity()
 Returns User's City name based on IP.
-```javascript
+```js
 bq.getCity();
 /*
 (string) "Vienna"
@@ -93,7 +93,7 @@ bq.getCity();
 
 ## bq.getCountry()
 Returns User's Country name based on IP.
-```javascript
+```js
 bq.getCountry();
 /*
 (string) "Austria"
@@ -102,8 +102,14 @@ bq.getCountry();
 
 ## bq.getUser()
 Returns Full User's Information.
-```javascript
+```js
 bq.getUser();
+```
+
+## bq.push(options)
+Push events to the analytics report that available on [https://hqmode.com/business-queries] if you set up your account.
+```js
+bq.push({group:"groupName",event:"eventName"});
 ```
 
 <br />
