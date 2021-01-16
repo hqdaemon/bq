@@ -9,7 +9,7 @@ User tracking and behavioral analytics based on the Device's Fingerprint.
 ## Initialization
 Just add the script into your HTML. No API Key Needed.
 ```html
-<script src="/path_to_script/bq.min.js"></script>
+<script async src="/path_to_script/bq.min.js"></script>
 ```
 <br />
 
